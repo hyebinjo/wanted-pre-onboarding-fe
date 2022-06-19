@@ -1,8 +1,21 @@
 import React from 'react';
-import PreAssignmentGuide from './pages/PreAssignmentGuide';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { getStorage } from './utils/storage';
+import Login from './pages/Login';
+import Main from './pages/Mains';
 
 function App() {
-  return <PreAssignmentGuide />;
+  const userAccount = getStorage('userAccount', null);
+
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={userAccount ? <Navigate to="/main" /> : <Login />}
+      />
+      <Route path="/main" element={<Main />} />
+    </Routes>
+  );
 }
 
 export default App;
