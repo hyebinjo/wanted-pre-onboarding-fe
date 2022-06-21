@@ -13,6 +13,7 @@ function App() {
         path="/"
         element={userAccount ? <Navigate to="/main" /> : <Login />}
       />
+      <Route path="/login" element={<Login />} />
       <Route path="/main" element={<Main />} />
     </Routes>
   );

@@ -12,7 +12,7 @@ const GNB = () => {
 
   const logout = () => {
     localStorage.removeItem('userAccount');
-    navigate('/');
+    navigate('/login');
   };
 
   return (
