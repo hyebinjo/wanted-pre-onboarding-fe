@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { getStorage } from './utils/storage';
 import Login from './pages/Login';
-import Main from './pages/Mains';
+import Main from './pages/Main';
 
 function App() {
   const userAccount = getStorage('userAccount', null);
