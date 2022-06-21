@@ -47,6 +47,7 @@ const Container = styled.div`
   width: 975px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   @media screen and (max-width: 975px) {
     width: 100%;
@@ -75,6 +76,7 @@ const Input = styled.input`
 const Icons = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 278px;
   padding-left: 24px;
   font-size: 24px;
