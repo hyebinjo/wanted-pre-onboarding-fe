@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdHome } from 'react-icons/md';
 import { IoPaperPlaneOutline } from 'react-icons/io5';
@@ -7,6 +8,13 @@ import { ImCompass2 } from 'react-icons/im';
 import { FaRegHeart } from 'react-icons/fa';
 
 const GNB = () => {
+  const navigate = useNavigate();
+
+  const logout = () => {
+    localStorage.removeItem('userAccount');
+    navigate('/');
+  };
+
   return (
     <Nav>
       <Container>
@@ -21,7 +29,7 @@ const GNB = () => {
           <CgAddR />
           <ImCompass2 />
           <FaRegHeart />
-          <Button>Logout</Button>
+          <Button onClick={logout}>Logout</Button>
         </Icons>
       </Container>
     </Nav>
@@ -91,4 +99,5 @@ const Icons = styled.div`
 
 const Button = styled.button`
   border-radius: 4px;
+  cursor: pointer;
 `;
