@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { login } from '../utils/authentication';
+import { setStorage } from '../utils/storage';
 
 const regexpId = /.@.+\../;
 const regexpPw =
@@ -29,7 +30,7 @@ const Login = () => {
     e.preventDefault();
     const userAccount = { id: idRef.current.value, pw: pwRef.current.value };
     if (login(userAccount.id, userAccount.pw)) {
-      localStorage.setItem('userAccount', JSON.stringify(userAccount));
+      setStorage('userAccount', userAccount);
       navigate('/main');
     } else alert('아이디와 비밀번호를 확인하세요');
   };
