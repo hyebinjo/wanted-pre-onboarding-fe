@@ -5,10 +5,7 @@
     "image_src": "https://source.unsplash.com/random/600x500",
     "count": 3,
     "comments": [
-      {
-        "user": "developer",
-        "text": "안녕하세요 개발자에요"
-      },
+      { "user": "developer", "text": "안녕하세요 개발자에요" },
       { "user": "designer", "text": "반가워요" }
     ]
   },
