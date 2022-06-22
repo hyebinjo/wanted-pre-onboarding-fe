@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "pre-onboarding",
+    "image_src": "https://source.unsplash.com/random/600x500",
+    "count": 3,
+    "comments": [
+      {
+        "user": "developer",
+        "text": "안녕하세요 개발자에요"
+      },
+      { "user": "designer", "text": "반가워요" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "hahahaha",
+    "image_src": "https://source.unsplash.com/random/900x500",
+    "count": 11,
+    "comments": [{ "user": "backend", "text": "안녕하세요" }]
+  },
+  {
+    "id": 3,
+    "name": "front-end",
+    "image_src": "https://source.unsplash.com/random/700x1080",
+    "count": 9,
+    "comments": [{ "user": "hello", "text": "안녕하세요" }]
+  }
+]

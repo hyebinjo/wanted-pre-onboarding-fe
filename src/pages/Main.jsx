@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import GNB from '../components/GNB';
+import Feeds from '../components/Feeds';
 
 const Main = () => {
   return (
     <MainPage>
       <GNB />
-      <h1>메인페이지</h1>
+      <Feeds />
     </MainPage>
   );
 };
