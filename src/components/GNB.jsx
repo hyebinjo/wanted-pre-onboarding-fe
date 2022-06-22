@@ -50,6 +50,7 @@ const Nav = styled.nav`
   height: 60px;
   background-color: #ffffff;
   border-bottom: 1px solid rgb(219, 219, 219);
+  z-index: 1;
 `;
 
 const Container = styled.div`

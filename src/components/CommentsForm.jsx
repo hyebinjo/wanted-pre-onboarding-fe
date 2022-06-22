@@ -29,7 +29,7 @@ const CommentsForm = ({ data }) => {
       <Ul>
         {comments.map((comment, idx) => (
           <Li key={idx}>
-            {`${comment.user} : `}
+            {`${comment.user} `}
             <P>{`${comment.text}`}</P>
           </Li>
         ))}
